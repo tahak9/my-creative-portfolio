@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="pen.png">
+<title>Portfolio | Studio Graphika</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #141824;
+      color: #fff;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.9);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #00c3ff;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #00c3ff;
+    }
+
+    .portfolio-section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .portfolio-section h1 {
+      color: #00c3ff;
+      margin-bottom: 2rem;
+      text-align: center;
+      font-size: 2.8rem;
+    }
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    } 
+    .portfolio-item {
+      background: #2c3e50;
+      padding: 1rem;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+      flex-shrink: 0;
+    } 
+    .portfolio-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0,195,255,0.3);
+    }
+    .portfolio-item img {
+      width: 100%;
+      display: block;
+      border-bottom: 3px solid #00c3ff;
+    }
+    .portfolio-item h3 {
+      margin: 0;
+      padding: 1rem;
+      background: #273142;
+      font-size: 1.2rem;
+      text-align: center;
+      color: #00c3ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 0.6rem;
+      background: #0d111a;
+      color: #aaa;
+      margin-top: 4rem;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Studio Graphika</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="portfolio-section">
+    <h1 style="font-size:30px; margin-top:0px; padding-bottom:0px;">My Creative Work</h1>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="youtube.jpg" alt="Logo Project 1">
+        <h3>Custom YouTube Thumbnail</h3>
+      </div>
+      <div class="portfolio-item">
+        <img src="Untitled1.png" alt="Poster Design">
+        <h3>Event Poster Design</h3>
+      </div>
+      <div class="portfolio-item">
+        <img src="Untitled6.png" alt="Social Media Graphic">
+        <h3>Instagram Post Design</h3>
+      </div>
+      <div class="portfolio-item">
+        <img src="Untitled2.png" alt="Packaging Design">
+        <h3>YouTube Channel Art (Banner)</h3>
+      </div>
+<div class="portfolio-item">
+        <img src="learning.png" alt="Packaging Design">
+        <h3>Instagram Story Design</h3>
+      </div>
+<div class="portfolio-item">
+        <img src="1000224278.jpg" alt="Packaging Design">
+        <h3>Facebook Cover Photo</h3>
+      </div>
+<div class="portfolio-item">
+        <img src="deee.png" alt="Packaging Design">
+        <h3>Facebook Post Design</h3>
+      </div>
+<div class="portfolio-item">
+        <img src="dee.png" alt="Packaging Design">
+        <h3>LinkedIn Banner Design</h3>
+      </div>
+<div class="portfolio-item">
+        <img src="1122.png" alt="Packaging Design">
+        <h3>Twitter Header (Cover Image)</h3>
+      </div>
+<div class="portfolio-item">
+        <img src="deeee.png" alt="Packaging Design">
+        <h3>Pinterest Pin Design</h3>
+      </div>
+<div class="portfolio-item">
+        <img src="PRofessional (1).png" alt="Packaging Design">
+        <h3>TikTok Video Cover Frame</h3>
+      </div>
+<div class="portfolio-item">
+        <img src="deeeee.png" alt="Packaging Design">
+        <h3>Snapchat Geo Filter Design</h3>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Studio Graphika. All rights reserved.</p>
+  </footer>
+</body>
+</html>

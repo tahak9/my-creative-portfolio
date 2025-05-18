@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image" href="pen.png"> <title>Studio Graphika</title>
+  <style>
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #141e30, #243b55);
+       background: url("Untitled-design-4.gif") repeat;
+  background-size: auto; /* keep original gif size for repeat */
+      color: #fff;
+background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.85);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #00c3ff;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #00c3ff;
+    }
+
+    .search-bar input {
+      padding: 0.4rem 0.7rem;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      font-size: 0.9rem;
+    }
+
+    .hero {
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 2rem;
+      background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    }
+
+    .hero h2 {
+      font-size: 3.2rem;
+      margin-bottom: 1rem;
+      color: #00c3ff;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      padding: 0.9rem 1.7rem;
+      background: #00c3ff;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .btn:hover,
+    .btn:active {
+      background: #00a3cc;
+      font-size: 1.05rem;
+      transform: scale(1.05);
+    }
+
+    .portfolio-preview {
+      padding: 4rem 2rem;
+      background-color: #1c273a;
+    }
+
+    .portfolio-preview h3 {
+      font-size: 2.3rem;
+      margin-bottom: 2rem;
+      color: #00c3ff;
+      text-align: center;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .portfolio-item {
+      background: #2c3e50;
+      padding: 1rem;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .portfolio-item::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 4px;
+      width: 0%;
+      background-color: #00c3ff;
+      transition: width 0.3s ease;
+    }
+
+    .portfolio-item:hover::after {
+      width: 100%;
+    }
+
+    .portfolio-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 195, 255, 0.4);
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .portfolio-item h4 {
+      margin: 0;
+      font-size: 1.2rem;
+      text-align: center;
+      color: #00c3ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 0.7rem;
+      background: #111;
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Studio Graphika</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+    </div>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h2 style="font-size:44px; color:;">Creative Graphic Design for Modern Brands</h2>
+      <p>Transforming ideas into stunning visuals – logos, branding, and more</p>
+      <a href="portfolio.html" class="btn">Explore Portfolio</a>
+    </div>
+  </section>
+
+  <section class="portfolio-preview">
+    <h3>🔹 My Portfolio</h3>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="Untitled2.png" alt="Logo Design 1">
+        <h4>Modern Thumbnail</h4>
+      </div>
+      <div class="portfolio-item">
+        <img src="youtube.jpg" alt="Branding Work">
+        <h4>Creative 	Thumbnails Pack</h4>
+      </div>
+      <div class="portfolio-item">
+        <img src="Untitled1.png" alt="Flyer Design">
+        <h4>Custom Thumbnail</h4>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Studio Graphika. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

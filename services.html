@@ -1,0 +1,152 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image" href="pen.png">  
+<title>Services | Studio Graphika</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #141824;
+      color: #fff;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.9);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #00c3ff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #00c3ff;
+    }
+
+    .services-section {
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .services-section h1 {
+      color: #00c3ff;
+      margin-bottom: 2rem;
+      text-align: center;
+      font-size: 2.8rem;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+   .service-box {
+  background: #1f2735;
+  border-radius: 15px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.service-box:hover {
+  background: #263345;
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,195,255,0.4);
+}
+    .service-box h3 {
+      color: #00c3ff;
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+    }
+
+    .service-box p {
+      line-height: 1.6;
+      font-size: 1rem;
+      color: #ddd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 0.7rem;
+      background: #0d111a;
+      color: #aaa;
+      margin-top: 4rem;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Studio Graphika</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+         <li><a href="privacy.html">Privacy Policy</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="services-section">
+    <h1 style="font-size:30px; margin-top:0px; padding-bottom:0px;">My Design Services</h1>
+    <div class="services-grid">
+      <div class="service-box">
+        <h3>Logo Design</h3>
+        <p>Custom, unique logos that represent your brand identity with style and creativity.</p>
+      </div>
+      <div class="service-box">
+        <h3>Branding Packages</h3>
+        <p>Complete brand kits including logo, business cards, letterheads, and social media visuals.</p>
+      </div>
+      <div class="service-box">
+        <h3>Social Media Graphics</h3>
+        <p>Eye-catching posts, covers, and stories for platforms like Instagram, Facebook, and LinkedIn.</p>
+      </div>
+      <div class="service-box">
+        <h3>Marketing Materials</h3>
+        <p>Flyers, brochures, posters, banners — designed to promote your product or service effectively.</p>
+      </div>
+      <div class="service-box">
+        <h3>Web & App UI Design</h3>
+        <p>Modern interface designs for websites and apps, focusing on usability and visual appeal.</p>
+      </div>
+      <div class="service-box">
+        <h3>Packaging Design</h3>
+        <p>Creative and practical packaging that enhances product appeal and brand presence.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Studio Graphika. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
